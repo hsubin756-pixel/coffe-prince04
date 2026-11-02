@@ -1,0 +1,18 @@
+spring:
+  config:
+    import: "file:./.env[.properties]"
+  application:
+    name: coffe-prince
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+        use_sql_comments: true
